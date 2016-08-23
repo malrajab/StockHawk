@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_of_graph">300dp</dimen>
+    <dimen name="height_of_stock_item">50dp</dimen>
+    <dimen name="margin_LtoR_of_stock_item">12dp</dimen>
+    <dimen name="margin_btm_of_stock_item">6dp</dimen>
+</resources>

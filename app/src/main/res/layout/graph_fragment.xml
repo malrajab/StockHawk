@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_of_graph"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="0dp"
+        card_view:cardBackgroundColor="@color/material_bluish_a700"
+        card_view:cardCornerRadius="5dp">
+        <TextView
+            android:gravity="center"
+            android:id="@+id/chart_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/no_name_stock_name"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"/>
+        <com.db.chart.view.LineChartView
+            xmlns:chart="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/linechart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:padding="20dp" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardlinetimebar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="0dp"
+        card_view:cardBackgroundColor="@color/material_bluish_a700"
+        card_view:cardCornerRadius="5dp">
+        <LinearLayout
+            android:id="@+id/timebar_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Space style="@style/separator_graph"/>
+            <TextView
+                style="@style/CustomGraphBT"
+                android:text="@string/grapg_1d" />
+            <Space style="@style/separator_graph"/>
+            <TextView
+                style="@style/CustomGraphBT"
+                android:text="@string/grapg_1w"/>
+            <Space style="@style/separator_graph"/>
+            <TextView
+                style="@style/CustomGraphBT"
+                android:text="@string/grapg_1m"/>
+            <Space style="@style/separator_graph"/>
+            <TextView
+                style="@style/CustomGraphBT"
+                android:text="@string/grapg_3m"/>
+            <Space style="@style/separator_graph"/>
+            <TextView
+                style="@style/CustomGraphBT"
+                android:text="@string/grapg_1y"/>
+            <Space style="@style/separator_graph"/>
+            <TextView
+                style="@style/CustomGraphBT"
+                android:text="@string/grapg_10y"/>
+            <Space style="@style/separator_graph"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

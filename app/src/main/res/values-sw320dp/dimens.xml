@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="stock_card_margin_rightandleft">5dp</dimen>
+    <dimen name="stock_item_corner">3dp</dimen>
+    <dimen name="stock_item_padding">6dp</dimen>
+    <dimen name="height_of_graph">200dp</dimen>
+    <dimen name="height_of_stock_item">42dp</dimen>
+    <dimen name="margin_LtoR_of_stock_item">6dp</dimen>
+    <dimen name="margin_btm_of_stock_item">4dp</dimen>
+</resources>
