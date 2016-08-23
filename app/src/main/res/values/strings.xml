@@ -1,38 +1,41 @@
 <resources>
 
-  <!-- Key name for storing stock server status in SharedPreferences -->
-  <string name="pref_stock_status_key" translatable="false">stock-status</string>
+    <!-- Key name for storing stock server status in SharedPreferences -->
+    <string name="pref_stock_status_key" translatable="false">stock-status</string>
 
-  <string name="app_name">Stock Watch</string>
-  <string name="action_example">Example action</string>
-  <string name="action_settings">Settings</string>
-  <string name="action_change_units">Change Units</string>
-  <string name="symbol_search">Symbol Search</string>
-  <string name="content_test">Search for a Stock Symbol</string>
-  <string name="input_hint" translatable="false">FB</string>
-  <string name="input_prefill"></string>
-  <string name="network_toast">Uh-oh! This app requires an internet connection</string>
+    <string name="app_name">Stock Watch</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_change_units">Change Units</string>
+    <string name="symbol_search">Symbol Search</string>
+    <string name="content_test">Search for a Stock Symbol</string>
+    <string name="input_hint" translatable="false">FB</string>
+    <string name="input_prefill"></string>
+    <string name="network_toast">Uh-oh! This app requires an internet connection</string>
 
-  <!-- Empty Stock -->
-  <string name="empty_stock_list">No Stock Information Available</string>
-  <string name="empty_stock_list_no_network">No Stock information available. The network is not available to fetch data.</string>
-  <string name="empty_stock_list_server_down">No Stock information available. The server is not returning data.</string>
-  <string name="empty_stock_list_server_error">No Stock information available. The server is not returning valid data. Please check for an updated version of Stock prices.</string>
-  <string name="empty_stock_list_invalid_stock_name">No Stock information available. The requested organizations name is incorrect or could not find</string>
-  <string name="action_refresh" translatable="true">Refresh</string>
-  <string name="no_fav_dialog_title" translatable="true">No Match</string>
-  <string name="no_fav_dialog_msg">No symbol matches found for %1s. Try another symbol such as MSFT or AAPL.</string>
-  <string name="stock_refresh" translatable="true">Stock data is being refreshed</string>
-  <string name="sample_status_sign" translatable="true">change of value is up</string>
-  <string name="no_name_stock_name" translatable="true">Graph of stock history</string>
-  <string name="default_value_of_market_status" translatable="true">Market is open</string>
-  <string name="grapg_1d">1D</string>
-  <string name="grapg_1w">1W</string>
-  <string name="grapg_1m">1M</string>
-  <string name="grapg_3m">3M</string>
-  <string name="grapg_1y">1Y</string>
-  <string name="grapg_10y">10Y</string>
-  <string name="market_is_close" translatable="true">MARKET IS CLOSED</string>
-  <string name="action_change_units_altr" translatable="true">Change Units</string>
+    <!-- Empty Stock -->
+    <string name="empty_stock_list">No Stock Information Available</string>
+    <string name="empty_stock_list_no_network">No Stock information available. The network is not available to fetch data.</string>
+    <string name="empty_stock_list_server_down">No Stock information available. The server is not returning data.</string>
+    <string name="empty_stock_list_server_error">No Stock information available. The server is not returning valid data. Please check for an updated version of Stock prices.</string>
+    <string name="empty_stock_list_invalid_stock_name">No Stock information available. The requested organizations name is incorrect or could not find</string>
+    <string name="action_refresh" translatable="true">Refresh</string>
+    <string name="no_fav_dialog_title" translatable="true">No Match</string>
+    <string name="no_fav_dialog_msg">No symbol matches found for %1s. Try another symbol such as MSFT or AAPL.</string>
+    <string name="stock_refresh" translatable="true">Stock data is being refreshed</string>
+    <string name="sample_status_sign" translatable="true">change of value is up</string>
+    <string name="no_name_stock_name" translatable="true">Graph of stock history</string>
+    <string name="default_value_of_market_status" translatable="true">Market is open</string>
+    <string name="grapg_1d">1D</string>
+    <string name="grapg_1w">1W</string>
+    <string name="grapg_1m">1M</string>
+    <string name="grapg_3m">3M</string>
+    <string name="grapg_1y">1Y</string>
+    <string name="grapg_10y">10Y</string>
+    <string name="market_is_close" translatable="true">MARKET IS CLOSED</string>
+    <string name="action_change_units_altr" translatable="true">Change Units</string>
+    <string name="appwidget_text">Stock Watch</string>
+    <string name="configure">Select a name for your widget</string>
+    <string name="add_widget">Add widget</string>
 
 </resources>

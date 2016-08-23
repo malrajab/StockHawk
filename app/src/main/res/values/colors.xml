@@ -7,6 +7,7 @@
   <color name="material_gray_600">#757575</color>
   <color name="material_gray_700">#616161</color>
   <color name="material_bluish_a700">#2962FF</color>
+  <color name="wmaterial_gray_a700">#22424242</color>
   <color name="material_gray_800">#424242</color>
   <color name="black_bg">#000000</color>
 </resources>
