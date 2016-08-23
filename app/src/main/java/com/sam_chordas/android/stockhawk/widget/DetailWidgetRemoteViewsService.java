@@ -5,15 +5,18 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Binder;
 import android.os.Build;
+import android.widget.AdapterView;
 import android.widget.RemoteViews;
 import android.widget.RemoteViewsService;
 
 import com.sam_chordas.android.stockhawk.R;
 import com.sam_chordas.android.stockhawk.model.db.QuoteColumns;
 import com.sam_chordas.android.stockhawk.model.db.QuoteProvider;
+import com.sam_chordas.android.stockhawk.utils.Constants;
 
 /**
  * Created by m_alrajab on 8/23/16.
+ * Bind data to widget listview
  */
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
 public class DetailWidgetRemoteViewsService extends RemoteViewsService {
@@ -29,7 +32,7 @@ public class DetailWidgetRemoteViewsService extends RemoteViewsService {
 
 
     @Override
-    public RemoteViewsFactory onGetViewFactory(Intent intent) {
+    public RemoteViewsFactory onGetViewFactory(final Intent intent) {
         return new RemoteViewsFactory() {
             private Cursor data = null;
 
@@ -68,7 +71,24 @@ public class DetailWidgetRemoteViewsService extends RemoteViewsService {
 
             @Override
             public RemoteViews getViewAt(int position) {
-                return null;
+                if (position == AdapterView.INVALID_POSITION ||
+                        data == null || !data.moveToPosition(position)) {
+                    return null;
+                }
+                RemoteViews views = new RemoteViews(getPackageName(),
+                        R.layout.wstock_item_entry);
+
+                int stockId = data.getInt(INDEX_ID);
+                String ticker = data.getString(INDEX_SYMBOL);
+                String bidPrice = data.getString(INDEX_BIDPRICE);
+
+                views.setTextViewText(R.id.bid_price, bidPrice);
+                views.setTextViewText(R.id.w_stock_ticker, ticker);
+
+                final Intent intentVGraph = new Intent();
+                intentVGraph.putExtra(Constants.GRAPH_ARG_KEY,ticker);
+                views.setOnClickFillInIntent(R.id.w_entry_container, intentVGraph);
+                return views;
             }
 
             @Override
